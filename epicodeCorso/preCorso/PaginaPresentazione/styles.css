@@ -1,0 +1,82 @@
+header{
+padding: 15px;
+margin-top: auto;
+text-align: center;
+background-color: rgb(13, 125, 177);
+}
+
+body{
+    background-image: url(bkr2.webp);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+h1{
+    color: aliceblue;
+
+}
+
+.intro{
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.hobbies{
+    text-align: center;
+    width: auto;
+    margin: auto;
+    border: 1px solid rgb(200, 205, 222);
+    background-color: rgb(113, 165, 211);
+    color: aliceblue;
+    font-size: xx-large;
+    border-radius: 20px;
+
+}
+
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    height:50% ;
+    border-radius: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    color: aliceblue;
+    font-size: larger;
+    margin-bottom: 50px;
+  }
+  
+  th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    
+  }
+  
+  tr:hover {background-color: coral;}
+
+
+
+  ul.no-bullets {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    color: antiquewhite;
+  }
+
+  
+  
+  
+
+
+ 
+ 

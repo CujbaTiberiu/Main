@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EveryDay Music</title>
+    <style>
+        body {
+            text-align: center;
+            background-image: url(bkrMusic.jpg);
+        }
+
+        h1 {
+            color: rgb(14, 83, 126);
+            font-size: 100px;
+            margin-bottom: 50px;
+        }
+
+        h2 {
+            color: rgb(14, 83, 126);
+            margin-bottom: 50px;
+            font-size: 40px;
+        }
+
+        h3 {
+            color: rgb(14, 83, 126);
+            margin-bottom: 50px;
+            font-size: 30px;
+
+        }
+
+        input[type=text] {
+            width: 300px;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid rgb(7, 0, 202);
+            border-radius: 10px;
+            box-sizing: border-box;
+        }
+
+        input[type=email] {
+            width: 300px;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid rgb(7, 0, 202);
+            border-radius: 10px;
+            box-sizing: border-box;
+        }
+
+        input[type=password] {
+            width: 300px;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid rgb(7, 0, 202);
+            border-radius: 10px;
+            box-sizing: border-box;
+        }
+
+        input[type=date] {
+            width: 300px;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid rgb(7, 0, 202);
+            border-radius: 10px;
+            box-sizing: border-box;
+        }
+
+        input[type=number] {
+            width: 300px;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid rgb(7, 0, 202);
+            border-radius: 10px;
+            box-sizing: border-box;
+        }
+
+        .container {
+            display: block;
+            position: relative;
+            padding-left: 35px;
+            margin-bottom: 12px;
+            cursor: pointer;
+            font-size: 22px;
+        }
+
+
+
+        button[type=submit] {
+            background-color: #15b02c;
+            border: none;
+            color: white;
+            padding: 16px 32px;
+            text-align: center;
+            font-size: 16px;
+            margin: 4px 2px;
+            opacity: 0.6;
+            transition: 0.3s;
+            display: inline-block;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            opacity: 1
+        }
+    </style>
+</head>
+
+<body>
+    <h1>
+        Benvenuti su EveryDay Music!
+    </h1>
+    <h2>
+        Compila i campi sottastanti per procedere con
+        la registrazione.
+    </h2>
+    <form onsubmit="alert('Registrazione avvenuta con successo!')">
+        <div>
+            <input type="text" placeholder="Nome">
+            <input type="text" placeholder="Cognome">
+        </div>
+        <div>
+            <input type="email" placeholder="La tua email">
+        </div>
+        <div>
+            <input type="password" placeholder="La tua password">
+        </div>
+        <div>
+            <input type="date">
+        </div>
+        <div>
+            <input type="number" placeholder="Il tuo numero di telefono">
+        </div>
+        <h3>
+            Scegli uno o più generi musicali che preferisci
+        </h3>
+        <label class="container">Pop
+            <input type="checkbox">
+
+        </label>
+        <label class="container">Rap
+            <input type="checkbox">
+
+        </label>
+        <label class="container">Rock
+            <input type="checkbox">
+
+        </label>
+        <label class="container">Electronic
+            <input type="checkbox">
+
+        </label>
+        <label class="container">Raggaeton
+            <input type="checkbox">
+
+        </label>
+        <input type="radio">
+        <tag>Accetta termini e condizioni</tag><br>
+        </div>
+        <button type="submit">Registrati</button>
+    </form>
+</body>
+
+</html>
