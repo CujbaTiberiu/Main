@@ -1,0 +1,38 @@
+body{
+    text-align: center;
+    font: Georgia, serif;
+    margin: 0;
+}
+
+nav{
+    background-color: #ffffff;
+    padding: 1rem 0;
+    border-bottom: 1px solid #ffd977;
+    font-size: 0.8rem;
+    margin-bottom: 0.5rem;
+}
+
+nav{
+    display: block;
+}
+
+img{
+    width: 150px;
+}
+
+.underlogo{
+padding: 15px;
+color: #004d4d;
+background-color: #d3c193;
+}
+
+.asside p{
+color: darkorange;
+}
+.asside{
+    border-left:#db9758 ;
+}
+
+.video{
+    border-radius: 10px;
+}
