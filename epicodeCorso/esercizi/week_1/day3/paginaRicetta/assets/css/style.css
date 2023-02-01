@@ -1,38 +1,58 @@
+
 body{
     text-align: center;
     font: Georgia, serif;
     margin: 0;
 }
 
+.container{
+    text-align: left;
+    margin: 40px;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+.ricetta,.ending, .intro, #author, #info{
+    margin-left: 350px;
+    margin-right: 350px;
+    padding: 0.5rem;
+}
 nav{
     background-color: #ffffff;
     padding: 1rem 0;
-    border-bottom: 1px solid #ffd977;
     font-size: 0.8rem;
     margin-bottom: 0.5rem;
 }
 
-nav{
-    display: block;
-}
-
-img{
-    width: 150px;
-}
-
-.underlogo{
-padding: 15px;
-color: #004d4d;
-background-color: #d3c193;
-}
-
-.asside p{
-color: darkorange;
-}
-.asside{
-    border-left:#db9758 ;
-}
-
 .video{
+    width: 800px;
     border-radius: 10px;
+    overflow: hidden;
+    z-index: 1;
+    height: auto;
+}
+
+#motto{
+    border-top: 1px solid #ffd977;
+    color: #004d4d;
+    padding-bottom: 1rem;
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgb(240, 240, 207) 0%, rgb(247, 245, 140) 7%);
+}
+#info{
+    text-align: left;
+    border-left: 2px solid #df8804;
+}
+
+#info p{
+    color: #df8804;
+}
+#author{
+    margin-top: -30px;
+    color: gray;
+}
+
+.ending{
+    margin-left: -50px;
 }
