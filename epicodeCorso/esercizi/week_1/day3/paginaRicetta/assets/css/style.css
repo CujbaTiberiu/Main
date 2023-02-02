@@ -5,19 +5,12 @@ body{
     margin: 0;
 }
 
-.container{
+.container, .ending{
     text-align: left;
-    margin: 40px;
-    margin-top: 0;
-    margin-bottom: 0;
-    padding-left: 60px;
-    padding-right: 60px;
+    width: 50%;
+    margin: auto;
 }
-.ricetta,.ending, .intro, #author, #info{
-    margin-left: 350px;
-    margin-right: 350px;
-    padding: 0.5rem;
-}
+
 nav{
     background-color: #ffffff;
     padding: 1rem 0;
@@ -26,11 +19,10 @@ nav{
 }
 
 .video{
-    width: 800px;
+    width: 100%;
     border-radius: 10px;
-    overflow: hidden;
-    z-index: 1;
-    height: auto;
+    overflow: auto;
+    padding-bottom: 10px;
 }
 
 #motto{
@@ -51,8 +43,13 @@ nav{
 #author{
     margin-top: -30px;
     color: gray;
+    text-align: center;
+}
+
+#info a{
+    color: rgb(53, 235, 235);
 }
 
 .ending{
-    margin-left: -50px;
+    text-align: left;
 }
