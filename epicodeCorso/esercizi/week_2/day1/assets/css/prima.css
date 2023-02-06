@@ -28,8 +28,8 @@ img {
   width: 30%;
 }
 
-a {
-  display: block;
+.link a {
+  display: inline-block;
   color: white;
   text-decoration: none;
 }
