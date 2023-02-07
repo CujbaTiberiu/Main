@@ -48,7 +48,7 @@ document.getElementById('valore1').innerHTML += addizione + ', ' + (++addizione)
 
 //0.3
 var sottrazione = iniziale - 10;
-document.getElementById('valore2').innerHTML += sottrazione + ', ' (--sottrazione);
+document.getElementById('valore2').innerHTML += sottrazione + ', ' + (--sottrazione);
 
 //0.4
 document.getElementById('valore3').innerHTML += iniziale*3;
@@ -57,4 +57,4 @@ document.getElementById('valore3').innerHTML += iniziale*3;
 document.getElementById('valore4').innerHTML += iniziale/3;
 
 //0.5
-document.getElementById('valore5').innerHTML += iniziale + 'é un numero';
+document.getElementById('valore5').innerHTML += iniziale + ' ' + 'é un numero';
