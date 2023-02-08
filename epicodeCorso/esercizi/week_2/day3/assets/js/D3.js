@@ -97,10 +97,30 @@ if(scontato > 50){
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+var n1 = 55;
+var n2 = 10;
+var n3 = 28;
 
+var riordinato = [n1, n2, n3];
+
+if (n1>n2 && n1>n3){
+  if(n2>n3){
+    riordinato = [n3, n2, n1];
+  } else{
+    riordinato = [n2, n3, n1]
+  }
+}else if (n2>n1 && n2>n3){
+ if(n1>n3){
+riordinato = []
+ }
+}
+ 
+    
+
+/*
 var n1 = 10;
 var n2 = 58;
-var n3 = 18;
+var n3 = 28;
 
 var riordinato = [n1, n2, n3];
 console.log(riordinato);
@@ -110,7 +130,7 @@ document.getElementById('esercizio7').innerHTML = riordinato;
 riordinato.sort();
 console.log(riordinato);
 document.getElementById('esercizio7.1').innerHTML = riordinato;
-
+*/
 
 
 /* ESERCIZIO 8
@@ -118,6 +138,13 @@ document.getElementById('esercizio7.1').innerHTML = riordinato;
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+var esercizio = 10;
+document.getElementById('esercizio8').innerHTML = typeof esercizio;
+
+
+var numbers = (typeof esercizio == 'number') ? 'si' : 'no';
+document.getElementById('esercizio8').innerHTML = 'è un numero?'+ " " + numbers;
+console.log(numbers);
 
 /* ESERCIZIO 9
   Crea un algoritmo per controllare se un numero fornito sia pari o dispari (suggerimento: cerca l'operatore modulo su un motore di ricerca)
@@ -127,15 +154,29 @@ document.getElementById('esercizio7.1').innerHTML = riordinato;
 
 /* ESERCIZIO 10
   Modifica la logica del seguente algoritmo in modo che mostri in console il messaggio corretto in ogni circostanza.
+  */
+
   let val = 7
   if (val < 10) {
       console.log("Meno di 10");
+      document.getElementById('esercizio10').innerHTML = 'Meno di 10';
     } else if (val < 5) {
       console.log("Meno di 5");
     } else {
       console.log("Uguale a 10 o maggiore");
     }
-*/
+
+    let val2 = 7
+    if (val2 > 10) {
+      console.log("Meno di 10");
+    } else if (val2 > 5) {
+      console.log("Meno di 5");
+      document.getElementById('esercizio10-2').innerHTML = 'Meno di 5';
+    } else {
+      console.log("Uguale a 10 o maggiore");
+    }
+  
+  
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
@@ -151,12 +192,19 @@ const me = {
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
+me.city = 'Toronto';
+console.log(me);
+document.getElementById('esercizio11').innerHTML = me.city;
+
 /* ESERCIZIO 12
   Lavorando sempre sull'oggetto precedentemente fornito, scrivi del codice per rimuovere la proprietà "lastName".
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
+me.lastName = '';
+console.log('me');
+document.getElementById('esercizio12').innerHTML = me.lastName;
 /* ESERCIZIO 13
   Lavorando sempre sull'oggetto precedentemente fornito, scrivi del codice per rimuovere l'ultimo elemento della proprietà "skills".
 */
