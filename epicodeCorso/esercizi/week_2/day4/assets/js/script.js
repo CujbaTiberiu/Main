@@ -249,3 +249,12 @@ console.log(characters);
 /* EXTRA ESERCIZIO 10
   Crea una funzionalità che prenda un elemento casuale dall'array "starWarsCharacters" e ne stampi in console le proprietà in modo discorsivo
   */
+function RandArray(starWarsCharacters) {
+  let rand = Math.random().starWarsCharacters.length | 0;
+  let rValue = starWarsCharacters[rand];
+  return rValue;
+}
+
+
+var rValue = RandArray(starWarsCharacters);
+console.log(rValue);
