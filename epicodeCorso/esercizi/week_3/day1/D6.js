@@ -118,7 +118,7 @@ function giveMeRandom(n) {
     const array = [];
 
     for (let i = 0; i < n; i++) {
-        const randomNumber = Math.floor(Math.random() * 10);
+        const randomNumber = Math.floor(Math.random() * 11);
         array.push(randomNumber);
     }
 
