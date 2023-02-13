@@ -4,6 +4,12 @@ const tasti = document.querySelectorAll('button');
 
 tasti.forEach(tasto => { tasto.addEventListener('click', calcola) }) // event listener per ogni click dei tasti ed 
 // eseguirà la funzione
+/* extended function
+tasti.forEach(function(tasto) {
+  tasto.addEventListener('click', calcola);
+});
+
+*/
 function calcola() {
     var tastoScritta = this.innerText; // scrive il testo di quello che viene cliccato
     //console.log(tastoScritta);
