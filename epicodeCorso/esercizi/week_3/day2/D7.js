@@ -241,7 +241,7 @@ function trovaFilmVecchio(movies) {
   let filmVecchio = movies[0];
 
   movies.forEach(function (movie) {
-    if (movie.releaseYear < filmVecchio.releaseYear) {
+    if (movie.Year < filmVecchio.Year) {
       filmVecchio = movie;
     }
   });
@@ -251,6 +251,23 @@ function trovaFilmVecchio(movies) {
 console.log(trovaFilmVecchio(movies));
 /* ESERCIZIO 13
   Scrivi una funzione per ottenere il numero di film contenuti nell'array fornito.
+*/
+
+var getNumberOfMovies = movies => movies.length;
+
+const numMovies = getNumberOfMovies(movies);
+console.log(numMovies);
+
+
+
+
+
+/*
+function allMovies(movies) {
+  let myMovies = movies[0];
+  
+};
+allMovies();
 */
 
 /* ESERCIZIO 14
