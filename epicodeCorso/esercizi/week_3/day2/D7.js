@@ -12,7 +12,7 @@ const a = 'Cane';
 const b = 'Gatto';
 const c = concatenateStrings(a, b);
 const e = c.toUpperCase();
-console.log(e);
+console.log('esercizio 1 -' + '' + e);
 
 /* ESERCIZIO 2
   Scrivi una funzione per creare un array di soli valori DISPARI da 1 a 100.
