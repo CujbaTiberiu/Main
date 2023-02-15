@@ -1,0 +1,67 @@
+html, body {
+    margin: 0 auto;
+    padding: 0;
+    border: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+#container{
+    background: #6670ff;
+    padding: 30px;   
+    display: flex;
+    flex-direction: column;
+}
+
+#container h3, #container h1{
+    color: white;
+    text-align: center;
+    margin-bottom: 15px;
+    height: auto;
+}
+
+fieldset{
+    display: flex;
+    width: 100%;
+}
+
+#newTask{
+    width: 100%;
+    border: none;
+    padding: 14px;
+}
+
+#addTask{
+    width: 30%;
+    cursor: pointer;
+    background: #283a79;
+    border: none;
+    color: white;
+    font-size: 18px;
+}
+
+#list{
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0;
+    list-style: none;
+}
+
+#list li{
+    padding: 12px;
+    background: white;
+    border: 1px solid #2c45a3;
+    display:flex;
+    justify-content: space-between;
+}
+
+.delBtn{
+    padding: 10px;
+    cursor: pointer;
+    border: none;
+    background: #dd2424;
+    color: white;
+}
+
+li.completata {
+    text-decoration: line-through;
+}
