@@ -97,7 +97,7 @@ console.log("Es 5 - " + arrayPari);*/
  */
 function numeriConcat() {
   const concatArray = [];
-  for (j = 0; j <= 10; j++) {
+  for (j = 1; j <= 10; j++) {
     concatArray.push(j);
   }
   return concatArray;
