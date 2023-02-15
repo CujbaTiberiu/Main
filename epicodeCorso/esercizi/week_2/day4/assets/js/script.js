@@ -198,6 +198,7 @@ var totalMass = 0;
   Una volta fatto, modifica la massa di qualche elemento dell'equipaggio e vedi se riesci ad ottenere un messaggio diverso.
   CONSOLE LOG
   */
+
 switch (true) {
   case totalMass > 1000:
     console.log("DANGER! OVERLOAD ALERT: Jump ship now!");

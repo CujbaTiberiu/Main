@@ -95,8 +95,16 @@ console.log("Es 5 - " + arrayPari);*/
 /* ESERCIZIO 6
   Scrivi una funzione per sommare a catena i numeri contenuti in un array.
  */
-
-/* ESERCIZIO 7
+function numeriConcat() {
+  const concatArray = [];
+  for (j = 0; j <= 10; j++) {
+    concatArray.push(j);
+  }
+  return concatArray;
+}
+const theArray = numeriConcat();
+console.log(theArray);
+/* ESERCIZIO 7', '2', '3'
   Scrivi una funzione per incrementare di 1 tutti i valori numerici in un array.
 */
 
@@ -273,11 +281,30 @@ allMovies();
 /* ESERCIZIO 14
   Scrivi una funzione per creare un array con solamente i titoli dei film contenuti nell'array fornito.
 */
+function allMovieTitles(n) {
+  let anotherArray = [];
+  for (i = 0; i < n.length; i++) {
+    var titlesAll = n[i].Title;
+    anotherArray.push(titlesAll);
+  }
+  return anotherArray;
+}
+console.log(allMovieTitles(movies));
 
 /* ESERCIZIO 15
   Scrivi una funzione per ottenere dall'array fornito solamente i film usciti nel millennio corrente.
 */
+function currentMilleniumMovies() {
+  let latestMovies = [];
+  for (i = 0; i < movies.length; i++) {
+    if (movies[i].Year > 2000) {
+      latestMovies.push(movies[i].Year); // if only movies[i] it pushes the whole object 
+    }
+  }
+  return latestMovies;
+}
 
+console.log(currentMilleniumMovies(movies));
 /* ESERCIZIO 16
   Scrivi una funzione per ottenere dall'array fornito uno specifico film (la funzione riceve un imdbID come parametro).
 */

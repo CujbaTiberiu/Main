@@ -12,6 +12,11 @@ addTask.addEventListener('click', function () {
         delBtn.innerHTML = 'Delete Task';
         delBtn.className = 'delBtn';
         list.appendChild(li);
+        for (let i = 0; i < list.length; i++) {
+            const icon = document.createElement('i');
+            icon.className = 'bidone';
+            list[i].insertAdjacentElement('afterbegin', icon);
+        }
         li.appendChild(delBtn);
         li.addEventListener('click', function () {
             li.classList.toggle('completata');
