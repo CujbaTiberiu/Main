@@ -101,6 +101,7 @@ const starWarsCharacters = [
   },
 ];
 
+
 /* ESERCIZIO 1
   Crea una variabile chiamata "characters" e inserisci un array vuoto
   NO CONSOLE LOG
