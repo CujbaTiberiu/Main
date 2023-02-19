@@ -1,14 +1,14 @@
-const newTask = document.getElementById('newTask');
-const addTask = document.getElementById('addTask');
-const list = document.getElementById('list');
+const input = document.getElementById('myInput');
+const addBtn = document.getElementById('addBtn');
+const list = document.querySelector('myList');
 
-addTask.addEventListener('click', function () {
+addBtn.addEventListener('click', function () {
     var li = document.createElement('li');
     var delBtn = document.createElement('button');
-    if (newTask.value === '') {
+    if (input.value === '') {
         return;
     } else {
-        li.innerHTML = newTask.value;
+        li.innerHTML = input.value;
         delBtn.innerHTML = 'Delete Task';
         delBtn.className = 'delBtn';
         list.appendChild(li);
@@ -22,7 +22,7 @@ addTask.addEventListener('click', function () {
             li.classList.toggle('completata');
         });
     }
-    newTask.value = '';
+    input.value = '';
     delBtn.addEventListener('click', function () {
         list.removeChild(li);
     })

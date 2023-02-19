@@ -508,7 +508,7 @@ function newestMovie(movies) {
   let newFilm = movies[0];
 
   movies.forEach(function (movie) {
-    if (movie.Year < newFilm.Year) {
+    if (movie.Year > newFilm.Year) {
       newFilm = movie;
     }
   });

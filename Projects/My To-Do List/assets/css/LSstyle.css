@@ -1,0 +1,83 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: url(https://cdn.pixabay.com/photo/2016/04/21/11/32/groceries-1343141_960_720.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+div {
+    margin-top: 15%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+}
+
+fieldset {
+    background-color: aliceblue;
+    padding: 20px 20px 20px 20px;
+}
+
+input {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+    width: 500px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+button {
+    background-color: #61ac77;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    width: 150px;
+}
+
+button:hover {
+    background-color: #4caf50;
+    color: white;
+}
+
+
+
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f9f9f9;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+li span {
+    flex: 1;
+}
+
+li button {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    cursor: pointer;
+}
