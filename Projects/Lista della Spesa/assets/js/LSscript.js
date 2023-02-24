@@ -20,7 +20,7 @@ addBtn.addEventListener('click', function () {
         delBtn.innerHTML = 'Delete Article';
         delBtn.className = 'delBtn';
         list.appendChild(li);
-        li.appendChild(delBtn);
+        li.appendChild(delBtn);// buttare fuori dal 1 blocco if
         checkboxes.forEach(function (checkBox) {
             checkBox.addEventListener('click', function () {
                 console.log('Checkbox clicked!');
@@ -31,7 +31,7 @@ addBtn.addEventListener('click', function () {
                     }, 3000);
                 }
             })
-        })
+        })//
     }
     input.value = '';
     delBtn.addEventListener('click', function () {
