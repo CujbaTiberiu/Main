@@ -20,19 +20,22 @@ addBtn.addEventListener('click', function () {
         delBtn.innerHTML = 'Delete Article';
         delBtn.className = 'delBtn';
         list.appendChild(li);
-        li.appendChild(delBtn);// buttare fuori dal 1 blocco if
-        checkboxes.forEach(function (checkBox) {
-            checkBox.addEventListener('click', function () {
-                console.log('Checkbox clicked!');
-                if (checkBox.checked) {
-                    congrats.style.display = 'block';
-                    setTimeout(function () {
-                        congrats.style.display = 'none';
-                    }, 3000);
-                }
-            })
-        })//
+        li.appendChild(delBtn);
     }
+
+    checkBox.addEventListener('click', function () {
+        console.log(checkBox.checked);
+        if (checkBox.checked) {
+            li.style.backgroundColor = 'yellow';
+            congrats.style.display = "block";
+            setTimeout(function () {
+                congrats.style.display = 'none';
+            }, 3000);
+        } else {
+            li.style.backgroundColor = "white";
+        }
+    })
+
     input.value = '';
     delBtn.addEventListener('click', function () {
         list.removeChild(li);
@@ -45,3 +48,7 @@ input.addEventListener('input', function () {
         error.style.display = 'none';
     }
 });
+
+const elem = document.getElementById("myElement");
+elem.style.animationPlayState = "running"; // start the animation
+elem.style.animationPlayState = "paused"; // stop the animation

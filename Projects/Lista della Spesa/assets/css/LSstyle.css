@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Tourney:wght@600&display=swap');
 
 body {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -23,15 +27,18 @@ h1 {
     display: flex;
     justify-content: center;
     font-family: 'Tourney', cursive;
+    font-size: 8vh;
+    color: white;
 }
 
 fieldset {
-    background-color: aliceblue;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(74, 119, 51, 1) 50%, rgba(137, 105, 195, 1) 100%);
+    ;
     padding: 20px 20px 20px 20px;
     margin-bottom: 10px;
     display: flex;
     flex-direction: column;
-    width: 60%;
+    width: 95%;
 }
 
 
@@ -39,8 +46,8 @@ input {
     flex: 1;
     padding: 10px;
     border: none;
-    border-radius: 5px;
-
+    opacity: 0.5;
+    ;
 }
 
 
@@ -70,12 +77,16 @@ ul {
 li {
     display: flex;
     align-items: center;
+    align-content: center;
+    justify-content: space-between;
+    width: 70vh;
     background-color: #f9f9f9;
     padding: 10px;
     margin-bottom: 10px;
     border-radius: 5px;
     margin: 10px 0;
     font-family: 'Permanent Marker', cursive;
+    font-size: 4rem;
 }
 
 li .delBtn {
@@ -85,7 +96,6 @@ li .delBtn {
     border-radius: 25px;
     padding: 10px;
     cursor: pointer;
-    margin-left: 350px;
 }
 
 li button:hover {
@@ -93,18 +103,52 @@ li button:hover {
     color: white;
 }
 
-#error {
-    display: none;
-    font-family: 'Tourney', cursive;
-}
-
+#error,
 #congrats {
     display: none;
     font-family: 'Tourney', cursive;
+    align-self: center;
+    margin-bottom: 10px;
 }
-
 
 li input[type="checkbox"] {
     margin-right: 10px;
     margin-top: 0;
+    width: 20px;
+    height: 20px;
+    flex: 0 0 auto;
+}
+
+li span {
+    flex: 1 1 auto;
+}
+
+.shppingLogo {
+    margin: 0;
+    margin-bottom: 0;
+    width: 200px;
+    height: 250px;
+}
+
+/*
+@keyframes myAnimation {
+    from {
+        opacity: 0.1;
+        background-color: #4caf4f75;
+    }
+
+    to {
+        opacity: 1;
+
+    }
+}
+
+#myElement {
+    animation-name: myAnimation;
+    animation-duration: 5s;
+}*/
+
+#myElement {
+    --animate-duration: 2s;
+    --animate-repeat: 2;
 }
