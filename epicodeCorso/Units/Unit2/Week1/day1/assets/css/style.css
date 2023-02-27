@@ -388,4 +388,8 @@ footer a {
         font-size: 2.5rem;
     }
 
+    section {
+        width: 100%;
+    }
+
 }
