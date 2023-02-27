@@ -1,0 +1,177 @@
+/* Your styles here */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans&display=swap');
+
+html, body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.65rem;
+}
+
+/*header*/
+
+header{
+    box-sizing: border-box;
+    background-color: black;
+    margin: 0 auto;
+    height: auto;
+    display: block;
+    padding: 1.5rem;
+}
+
+header img{
+    display: block;
+    width: 100px;
+    margin: 0 auto;
+}
+
+.banner{
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    padding: 1rem;
+    background-image: url(/assets/images/banner.jpg);
+    background-repeat: no-repeat;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    font-family: 'Open Sans', sans-serif;
+}
+.banner p{
+    margin-left: 5rem;
+    margin-right: 5rem;
+}
+
+h1{
+    color: #25a2c3;
+    font-family:'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 3rem;
+    line-height: 1;
+}
+
+.banner .button{
+    margin:0 auto;
+    display: block;
+    text-align: center;
+    padding: 0.5rem;
+    border-color: 1px solid salmon;
+    background-color: #e35d0a;
+    color: white;
+    font-size: 1rem;
+    width: 25%;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* main */
+
+main{
+    text-align: center;
+}
+
+main h3, h4{
+    color: #25a2c3;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    line-height: 1.5rem;
+}
+
+#benefici img{
+    border-radius: 360px;
+}
+
+#benefici p{
+    margin-left: 6em;
+    margin-right: 6em;
+}
+
+#testiomone{
+    background: rgb(2,0,36);
+    background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(205,79,20,1) 0%);
+    color: white;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+#testiomone h2{
+    font-size: 2rem;
+    padding-top: 2rem;
+}
+
+#testiomone blockquote{
+    font-style: italic;
+}
+
+#testiomone p:first-of-type{
+    font-size: 1.5rem;
+    margin-bottom: 0;
+}
+
+#testiomone p:last-child{
+    margin-top: 0;
+}
+
+/* Cards*/
+
+.card img{
+    display: inline-block;
+    width: 100%;
+}
+
+.card{
+    width: 80%;
+    display: inline-block;
+    margin-bottom: 1rem;
+    background: transparent;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #dee1e3;
+    border-radius: 0.3rem;
+}
+
+/*footer*/
+
+footer{
+    padding: 1.6rem;
+    text-align: center;
+    color: white;
+    background-color: #25a2c3;
+}
+
+footer div a{
+   color: white;
+}
+
+#conatti-link{
+    line-height: 1;
+}
+
+address a{
+    color:white;
+}
+
+address{
+    padding-bottom: 2rem;
+}
+
+footer p{
+    font-family:'Open sans', sans-serif;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+footer div{
+    border-top: 1px solid;
+    margin-left: 6rem;
+    margin-right: 6rem;
+}
+
+footer .reference{
+    font-family:'Open sans', sans-serif;
+    font-size: 0.6rem;
+}
