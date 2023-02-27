@@ -91,6 +91,8 @@ h1 {
     margin-bottom: 0.7em;
 }
 
+
+
 p,
 address,
 ul,
@@ -225,6 +227,33 @@ footer a {
 }
 
 /*--- Esercizio unit2 - day1---*/
+/*
+article img {
+    border: 10px solid;
+    border-style: double;
+    padding: 5px;
+    background-clip: padding-box;
+    border-color: rgb(19, 159, 202) rgb(19, 159, 202) rgb(19, 159, 202) rgb(19, 159, 202);
+}*/
+article img {
+    position: relative;
+    border: 4px solid rgb(140, 50, 172);
+    padding: 5px;
+    ;
+}
+
+article img:before {
+    content: " ";
+    position: absolute;
+    z-index: -1;
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+    border: 5px solid #14c0db;
+}
+
+
 @media screen and (min-width: 320px) {
     header nav ul {
         display: flex;
@@ -267,6 +296,10 @@ footer a {
     .articles {
         background-color: white;
         border: none;
+    }
+
+    article img {
+        width: 20%;
     }
 }
 
