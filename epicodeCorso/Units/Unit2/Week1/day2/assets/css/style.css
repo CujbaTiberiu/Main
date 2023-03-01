@@ -550,6 +550,12 @@ button:last-child {
         color: #969494;
     }
 
+    section h2 {
+        position: relative;
+        width: 100px;
+        top: -35px;
+    }
+
 }
 
 @media screen and (min-width: 1200px) {
