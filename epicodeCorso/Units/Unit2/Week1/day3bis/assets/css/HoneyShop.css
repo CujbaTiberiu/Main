@@ -1,5 +1,7 @@
 body {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 /* --- Navbar ---*/
@@ -129,11 +131,12 @@ h1 {
 
 .news {
     display: flex;
-    height: 550px;
-    width: 500px;
+    height: auto;
+    width: 300px;
     margin: 0 auto;
     border-radius: 60px;
     background-color: #fbf7e3;
+    margin: 10px 10px 10px 10px;
 }
 
 .news-content {
@@ -145,7 +148,9 @@ h1 {
 }
 
 .news-content img {
-    width: 300px;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
 }
 
 .news-title {
@@ -199,11 +204,19 @@ h1 {
 
 
 
-@media screen and (min-width: 481px) and (max-width: 576px) {}
+@media screen and (min-width: 481px) and (max-width: 576px) {
+    .news {
+        width: 500px;
+    }
+}
 
 @media screen and (min-width: 577px) and (max-width: 768px) {
     ul img {
         margin-left: -10px;
+    }
+
+    .news {
+        width: 500px;
     }
 }
 
@@ -211,10 +224,18 @@ h1 {
     ul img {
         margin-left: -10px;
     }
+
+    .news {
+        width: 700px;
+    }
 }
 
 @media screen and (min-width: 1025px) {
     ul img {
         margin-left: -10px;
+    }
+
+    .news {
+        width: 1000px;
     }
 }
