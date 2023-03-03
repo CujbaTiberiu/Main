@@ -1,0 +1,258 @@
+/* --- NAVBAR ---*/
+nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: #ffc017;
+    padding: 30px;
+    border-bottom: 1px solid black;
+    z-index: 1;
+    top: 0;
+    position: sticky;
+}
+
+.NavUl {
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.NavUl li {
+    list-style-type: none;
+}
+
+.NavUl .specialLi {
+    width: 80px;
+    padding: 0.7em;
+    background-color: black;
+    border-radius: 80px;
+    color: white;
+}
+
+/* --- HERO --- */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+    background-color: #ffc017;
+}
+
+.hero div:nth-child(2) {
+    width: 50%;
+}
+
+.heroContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-left: 10%;
+    width: 550px;
+}
+
+.heroContent h1 {
+    font-size: 6em;
+}
+
+.heroContent p {
+    font-size: 1.8em;
+    font-weight: 500;
+    opacity: 0.8;
+}
+
+.heroContent button {
+    color: white;
+    background-color: black;
+    font-size: 1.1em;
+    padding: 10px;
+    border-radius: 80px;
+    width: 180px;
+    margin-bottom: 20px;
+}
+
+.heroContent h1,
+.heroContent p,
+.heroContent button {
+    margin-top: 50px;
+}
+
+/* --- TRENDING NEWS SECTION --- */
+
+.trendNews {
+    display: flex;
+    flex-direction: row;
+    margin: 30px;
+    width: 300px;
+}
+
+.trendNews div:nth-child(1) {
+    font-size: 2em;
+    font-weight: bold;
+    opacity: 0.1;
+    margin-right: 10px;
+}
+
+.trending {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 40px;
+    position: relative;
+    border-bottom: 1px solid rgb(181, 176, 176);
+}
+
+.trendNews p img {
+    width: 20px;
+    border-radius: 80px;
+}
+
+.trendNews div:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+}
+
+.trendNewsContent>p {
+    margin: 5px;
+}
+
+.trendNewsContent p:nth-child(1) {
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    font-size: 0.7em;
+}
+
+.trendNewsContent p:nth-child(2) {
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.trendNewsContent p:nth-child(3) {
+    font-size: 0.8em;
+    opacity: 0.5;
+    display: flex;
+    align-items: center;
+}
+
+h2 {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 33px;
+    left: 73px;
+    font-weight: bold;
+    font-size: 0.7em;
+}
+
+/* --- OTHER NEWS SECTION --- */
+
+.otherNews {
+    display: flex;
+    flex-direction: column;
+    width: 650px;
+}
+
+.otherNewsCard {
+    display: flex;
+    align-items: flex-end;
+    width: 600px;
+    margin: 30px;
+    line-height: 1.5em;
+}
+
+.sideImg img {
+
+    max-width: 200px;
+    max-height: auto;
+    margin-left: 20px;
+}
+
+.otherNewsContent p img {
+    width: 20px;
+    border-radius: 80px;
+}
+
+.otherNewsContent p:nth-child(1) {
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    font-size: 0.7em;
+}
+
+.otherNewsContent p:nth-child(2) {
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.otherNewsContent p:nth-child(3) {
+    opacity: 0.5;
+}
+
+.lastRow {
+    display: flex;
+    justify-content: space-between;
+    opacity: 0.5;
+}
+
+.thumb {
+    background-color: lightgray;
+    border-radius: 80px;
+    width: auto;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.divideSections {
+    float: left;
+    display: flex;
+    flex-direction: row;
+}
+
+/* --- ASIDE SECTION --- */
+
+aside {
+    margin: 0 auto;
+    width: 80%;
+}
+
+aside .topics {
+    margin-top: 25px;
+    margin-left: 60%;
+    border-bottom: 1px solid lightgray;
+}
+
+.topics p {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: -15px;
+    margin-left: 35px;
+}
+
+.topics div {
+    padding: 30px;
+}
+
+.topics div>button {
+    padding: 5px;
+    margin: 2px;
+    background-color: white;
+    opacity: 0.5;
+    border-radius: 5px;
+}
+
+/* --- FOOTER SECTION --- */
+
+.footer {
+    width: 300px;
+}
+
+.footer ul {
+    display: flex;
+}
+
+.footer ul li {
+    list-style-type: none;
+    opacity: 0.5;
+    margin: 5px;
+}
