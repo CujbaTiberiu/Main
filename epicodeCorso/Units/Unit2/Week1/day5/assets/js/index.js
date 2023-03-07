@@ -5,11 +5,8 @@ window.addEventListener('scroll', () => {
     const heroSection = document.querySelector('.hero');
     const heroBottom = heroSection.offsetTop + heroSection.offsetHeight;
 
-    if (window.pageYOffset >= heroBottom) {
+    if (window.pageYOffset > heroBottom) {
         navbar.style.backgroundColor = 'white';
-        button.style.backgroundColor = 'green';
-    } else if (window.pageYOffset >= heroSection.offsetTop) {
-        navbar.style.backgroundColor = '#fff';
         button.style.backgroundColor = 'green';
     } else {
         navbar.style.backgroundColor = '#ffc017';
