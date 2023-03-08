@@ -109,6 +109,12 @@ const pushTrims = () => {
 pushTrims()
 console.log('Esercizio 9', justFirstTrims)
 
+/*
+cars.forEach((car) => {
+    trims.push(car.trims[0])
+})
+*/
+
 /* ESERCIZIO 10
     Cicla l'array "cars" e costruisci un if/else statament per mostrare due diversi messaggi in console.
     Se la lunghezza del valore della proprietà "color" è uguale o minore di 4, mostra in console "Fizz".
@@ -177,31 +183,79 @@ while (numericArray[i] !== 32) {
     dell'alfabeto italiano.
     es. [f, b, e] --> [6, 2, 5]
 */
-const charactersArray = ['g', 'n', 'u', 'z', 'd']
-
-const convertedArray = []
+const charactersArray = ['g', 'n', 'u', 'z', 'd'];
+const numbersArray = [];
 
 for (let i = 0; i < charactersArray.length; i++) {
+    let number;
     switch (charactersArray[i]) {
-        case 'g':
-            convertedArray.push(7);
+        case 'a':
+            number = 1;
             break;
-        case 'n':
-            convertedArray.push(12);
+        case 'b':
+            number = 2;
             break;
-        case 'u':
-            convertedArray.push(19);
-            break;
-        case 'z':
-            convertedArray.push(21);
+        case 'c':
+            number = 3;
             break;
         case 'd':
-            convertedArray.push(4);
+            number = 4;
+            break;
+        case 'e':
+            number = 5;
+            break;
+        case 'f':
+            number = 6;
+            break;
+        case 'g':
+            number = 7;
+            break;
+        case 'h':
+            number = 8;
+            break;
+        case 'i':
+            number = 9;
+            break;
+        case 'l':
+            number = 10;
+            break;
+        case 'm':
+            number = 11;
+            break;
+        case 'n':
+            number = 12;
+            break;
+        case 'o':
+            number = 13;
+            break;
+        case 'p':
+            number = 14;
+            break;
+        case 'q':
+            number = 15;
+            break;
+        case 'r':
+            number = 16;
+            break;
+        case 's':
+            number = 17;
+            break;
+        case 't':
+            number = 18;
+            break;
+        case 'u':
+            number = 19;
+            break;
+        case 'v':
+            number = 20;
+            break;
+        case 'z':
+            number = 21;
             break;
         default:
-            convertedArray.push(0);
-            break;
+            number = NaN;
     }
+    numbersArray.push(number);
 }
 
-console.log(convertedArray)
+console.log(numbersArray); 
