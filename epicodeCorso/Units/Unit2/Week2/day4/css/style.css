@@ -1,0 +1,10 @@
+nav {
+  width: 100vh;
+  background-color: rgb(78, 49, 244);
+}
+nav .navBtn {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}/*# sourceMappingURL=style.css.map */

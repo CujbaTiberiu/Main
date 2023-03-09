@@ -1,0 +1,8 @@
+nav {
+    width: 100vh;
+    background-color: rgb(78, 49, 244);
+    .navBtn{
+        @include flex
+    }
+}
+
