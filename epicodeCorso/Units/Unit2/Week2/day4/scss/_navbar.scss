@@ -1,8 +1,19 @@
+@import "./font";
+
 nav {
-    width: 100vh;
-    background-color: rgb(78, 49, 244);
+    width: 100vw;
+    background-color: rgb(152, 143, 205);
     .navBtn{
-        @include flex
+        @include flex(row, space-around);
+        position: fixed top;
+    }  img{
+        width: 55px;
+    }
+    a{
+        text-decoration: none;
+        font-weight: $fontSizeNav;
+        font-family: $font;
+        font-weight: bold;
     }
 }
 

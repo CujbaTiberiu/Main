@@ -1,0 +1,25 @@
+@import "./colori";
+@import "./mixins";
+@import "./font";
+
+ .buttons_hero {
+    @include flex(column, center);
+    align-items: stretch;
+   
+    .btn__Hero1{
+        width: 100px;
+        font-size: $fontSizeBtns;
+        padding: 5px;
+        background-color: $colorScopri;
+        border-radius: 60px;
+    }
+    .btn__Hero2{
+        @extend .btn__Hero1;
+        background-color: $colorAccedi;
+    }
+    
+    .btn__Hero3{
+        @extend .btn__Hero1;
+        background-color: $colorContattaci;
+    }
+ }
