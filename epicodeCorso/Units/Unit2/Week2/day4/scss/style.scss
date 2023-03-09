@@ -1,3 +1,30 @@
 @import "./mixins";
 @import "./navbar";
+@import "./colori";
+@import "./font";
+@import "./resetbody";
+@import "./bottoni";
 
+*{
+    font-family: $font;
+    color: $testo;
+}
+
+.hero{
+ padding: 10px;
+ @include flex(row,space-around);   
+ background-color: $bgHero;
+
+ img{
+    padding: 20px;
+    @include floating;
+ }
+
+ p{
+    padding: 30px;
+ }
+}
+
+.grid-container{
+    
+}
