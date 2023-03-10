@@ -1,0 +1,57 @@
+.form-select {
+    width: 120px;
+    padding-left: -15px;
+}
+
+footer .row {
+    font-size: 10px;
+}
+
+footer {
+    margin-left: 200px;
+}
+
+.col-12 button {
+    font-size: 10px;
+}
+
+
+.box_img img {
+    transition: transform .3s;
+}
+
+.box_img img:hover {
+    transition: transform .3s;
+    -ms-transform: scale(1.4);
+    -webkit-transform: scale(1.4);
+    transform: scale(1.4);
+}
+
+#img__profile {
+    width: 35px;
+    height: 35px;
+}
+
+header a img {
+    width: 100px;
+    height: 45px;
+}
+
+.form_container img {
+    width: 150px;
+}
+
+.form-check input {
+    width: 25px;
+    height: 25px;
+    background-color: black;
+}
+
+.btn__btns button {
+    font-size: 18px;
+    letter-spacing: 3px;
+}
+
+.btn__btns :nth-child(1) {
+    font-weight: bold;
+}
