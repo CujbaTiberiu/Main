@@ -59,12 +59,12 @@ myForm.addEventListener('submit', function (event) {
     event.preventDefault();
 
     const formData = new FormData(myForm);
-    const petName = formData.get('petName');
-    const ownerName = formData.get('ownerName');
-    const species = formData.get('species');
-    const breed = formData.get('breed');
+    const petNameValue = formData.get('petName');
+    const ownerNameValue = formData.get('ownerName');
+    const speciesValue = formData.get('species');
+    const breedValue = formData.get('breed');
 
-    const pet_Submit = new Pet(petName, ownerName, species, breed);
+    const pet_Submit = new Pet(petNameValue, ownerNameValue, speciesValue, breedValue);
     pets.push(pet_Submit);
 
     console.log(Pet.sameOwner());
