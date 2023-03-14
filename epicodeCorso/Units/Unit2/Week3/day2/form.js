@@ -43,7 +43,7 @@ timer.innerHTML = `${hours.toString().padStart(2, '0')}:${minutes.toString().pad
 setInterval(() => {
     seconds++;
 
-    if (seconds >= 61) {
+    if (seconds >= 60) {
         seconds = 0;
         minutes++;
         if (minutes >= 60) {
@@ -52,9 +52,14 @@ setInterval(() => {
         }
     }
 
-    timer.innerHTML = `${hours.toString().padStart(2, '0')}:${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
 
     sessionStorage.setItem('hours', hours);
     sessionStorage.setItem('minutes', minutes);
     sessionStorage.setItem('seconds', seconds);
+
+    const countHours = sessionStorage.getItem('hours')
+    const countMinutes = sessionStorage.getItem('minutes')
+    const countSeconds = sessionStorage.getItem('seconds')
+
+    timer.innerHTML = `${countHours.padStart(2, '0')}:${countMinutes.padStart(2, '0')}:${countSeconds.padStart(2, '0')}`;
 }, 1000);
