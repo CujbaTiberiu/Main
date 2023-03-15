@@ -1,0 +1,7 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgb(23, 150, 210) 50%, rgb(15, 130, 173) 100%);
+}/*# sourceMappingURL=app.css.map */
