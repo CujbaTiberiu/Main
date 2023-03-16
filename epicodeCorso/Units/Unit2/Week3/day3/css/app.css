@@ -4,4 +4,8 @@ body {
   box-sizing: border-box;
   background: rgb(0, 0, 0);
   background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgb(23, 150, 210) 50%, rgb(15, 130, 173) 100%);
+}
+
+.container .card-img-top {
+  height: 350px !important;
 }/*# sourceMappingURL=app.css.map */
