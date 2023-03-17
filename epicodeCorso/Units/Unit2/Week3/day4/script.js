@@ -15,14 +15,21 @@ const displayEvent = function (pics) {
         imagesPlaceholders.forEach((placeholder, index) => {
             let img = createImageElement(pics[index].src.large);
             let cardTitle = document.querySelectorAll('.card-title');
-            cardTitle.innerHTML = `${pics[index].alt}`
+            cardTitle.forEach((title, index) => {
+                title.innerHTML = pics[index].alt;
+            });
+            let idText = document.querySelectorAll('.text-muted');
+            idText.forEach((id, index) => {
+                id.innerHTML = pics[index].photographer_id;
+            });
             placeholder.parentNode.replaceChild(img, placeholder);
             let editBtn = document.querySelectorAll('.btn__edit');
             editBtn.forEach(btn => {
                 btn.innerHTML = 'Hide';
                 btn.addEventListener('click', function () {
-                    let cards = document.getElementsByClassName('card', 'shadow-sm');
-                    cards.forEach(c => {
+                    let cards = document.getElementsByClassName('card shadow-sm');
+                    Array.from(cards).forEach(c => {
+
                         c.classList.add('d-none')
 
                     })
