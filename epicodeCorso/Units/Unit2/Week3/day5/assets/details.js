@@ -19,7 +19,7 @@ const showSingleProduct = async function () {
 
             let containerDivReference = document.getElementsByClassName('col')[0]
             containerDivReference.innerHTML =
-                `<div class="img-fluid"><img src=${productData.imageUrl}></div>
+                `<div class="img-fluid"><img class="w-75" src=${productData.imageUrl}></div>
             <h3 class="my-3">Name: ${productData.name}</h3>
             <p class="text-white">Descriprion: ${productData.description}</p>
             <p class="text-white"> Brand: ${productData.brand}</p>
