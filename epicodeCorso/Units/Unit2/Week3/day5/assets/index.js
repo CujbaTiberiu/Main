@@ -10,7 +10,7 @@ const displayProducts = function (products) {
         Cards += `<div class="card mx-4" style="width: 18rem;">
     <img src="${product.imageUrl}" class="card-img-top" alt="${product.name}">
     <div class="card-body position-relative">
-      <h5 class="card-title mb-5">${product.name}</h5>
+      <h5 class="card-title mb-5 text-center">${product.name}</h5>
       <p class="card-text"></p>
       <div class="card__btns d-flex justify-content-between position-absolute bottom-0 ms-2 mb-1">
       <a href="./backoffice.html?eventId=${product._id}" class="btn btn-danger mx-1">Modifica</a>
