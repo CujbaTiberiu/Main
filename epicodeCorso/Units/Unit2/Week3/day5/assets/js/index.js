@@ -7,12 +7,14 @@ const displayProducts = function (products) {
     const row = document.getElementsByClassName('row')[0]
     let Cards = ""
     products.forEach(product => {
-        Cards += `<div class="card mx-4" style="width: 18rem;">
-    <img src="${product.imageUrl}" class="card-img-top" alt="${product.name}">
-    <div class="card-body position-relative">
-      <h5 class="card-title mb-5 text-center">${product.name}</h5>
-      <p class="card-text"></p>
-      <div class="card__btns d-flex justify-content-between position-absolute bottom-0 ms-2 mb-1">
+        Cards += `<div class="card mx-4 shadow">
+        <a class="text-decoration-none text-black" href="./details.html?eventId=${product._id}"><img src="${product.imageUrl}" class="card-img-top justify-content-center my-2" alt="${product.name}</a>">
+    <div class="card-body d-flex flex-column justify-content-between">
+        <div class="justify-content-between mb-2">
+      <h5 class="card-title text-center fs-3">${product.name}</h5>
+      <p class="card-text fs-4 text-center">${product.price}€</p>
+      </div>
+      <div class="card__btns d-flex justify-content-around me-3">
       <a href="./backoffice.html?eventId=${product._id}" class="btn btn-danger mx-1">Modifica</a>
       <a href="./details.html?eventId=${product._id}" class="btn btn-info">Scopri di più</a>
       </div>
