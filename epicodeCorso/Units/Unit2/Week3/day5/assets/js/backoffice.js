@@ -27,7 +27,7 @@ if (eventId) {
             document.getElementById('brand').value = productData.brand
             document.getElementById('image').value = productData.imageUrl
             document.getElementById('price').value = productData.price
-            document.getElementsByClassName('btn__save')[0].innerHTML = 'Save Change'
+            document.getElementsByClassName('btn__save')[0].innerHTML = 'Save Changes'
 
             document.getElementById('delete').classList.remove('d-none')
             let btnReset = document.getElementsByClassName('btn__reset')[0]
