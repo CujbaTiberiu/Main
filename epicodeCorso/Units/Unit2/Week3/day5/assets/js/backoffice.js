@@ -1,6 +1,5 @@
 const PRODOTTI_URL = 'https://striveschool-api.herokuapp.com/api/product/';
 let eventId = new URLSearchParams(window.location.search).get('eventId')
-let formReference = document.getElementsByTagName('form')[0]
 console.log('eventId', eventId)
 
 
@@ -27,15 +26,21 @@ if (eventId) {
             document.getElementById('brand').value = productData.brand
             document.getElementById('image').value = productData.imageUrl
             document.getElementById('price').value = productData.price
-            document.getElementsByClassName('btn__save')[0].innerHTML = 'Save Changes'
+
+            document.getElementsByClassName('btn__save')[0].innerHTML = 'Save changes'
 
             document.getElementById('delete').classList.remove('d-none')
+            document.getElementsByClassName('btn__save')[0].addEventListener('click', function () {
+                document.getElementById('delete').classList.add('d-none');
+            })
             let btnReset = document.getElementsByClassName('btn__reset')[0]
             btnReset.classList.remove('d-none');
             btnReset.addEventListener('click', function () {
                 if (confirm("Are you sure you want to RESET the form?")) {
+                    let formReference = document.getElementsByTagName('form')[0]
                     formReference.reset();
                     document.getElementById('delete').classList.add('d-none');
+                    document.getElementsByClassName('btn__save')[0].innerHTML = 'Add Product'
                 }
 
             })
@@ -44,7 +49,6 @@ if (eventId) {
             console.log(err)
         })
 }
-
 
 let deleteButnRef = document.getElementById('delete')
 deleteButnRef.addEventListener('click', async () => {
@@ -70,6 +74,7 @@ deleteButnRef.addEventListener('click', async () => {
     }
 })
 
+
 const saveProduct = async function (newProduct) {
     try {
         let url = eventId ? PRODOTTI_URL + eventId : PRODOTTI_URL
@@ -83,12 +88,7 @@ const saveProduct = async function (newProduct) {
             }
         })
         if (response.ok) {
-            if (eventId) {
-                alert('PRODOTTO AGGIORNATO CORRETTAMENTE')
-            } else {
-                alert('PRODOTTO AGGIUNTO CORRETTAMENTE')
-            }
-            //window.location.replace('./index.html')
+            alert('PRODOTTO SALVATO CORRETTAMENTE')
         } else {
             alert("PROBLEMA NEL SALVATAGGIO DEL PRODOTTO")
         }
@@ -97,6 +97,7 @@ const saveProduct = async function (newProduct) {
     }
 }
 
+let formReference = document.getElementsByTagName('form')[0]
 formReference.addEventListener('submit', (e) => {
     e.preventDefault()
 
@@ -107,17 +108,7 @@ formReference.addEventListener('submit', (e) => {
         imageUrl: document.getElementById('image').value,
         price: document.getElementById('price').value
     }
-
-    if (!document.getElementById('delete').classList.contains('d-none')) {
-        return;
-    }
-
     console.log(newProduct)
-    saveProduct()
-    console.log(saveProduct())
-    console.log(saveProduct(newProduct))
+    saveProduct(newProduct)
     formReference.reset()
 });
-
-
-
