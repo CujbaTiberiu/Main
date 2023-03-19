@@ -28,6 +28,7 @@ if (eventId) {
             document.getElementById('image').value = productData.imageUrl
             document.getElementById('price').value = productData.price
             document.getElementsByClassName('btn__save')[0].innerHTML = 'Save Change'
+
             document.getElementById('delete').classList.remove('d-none')
             let btnReset = document.getElementsByClassName('btn__reset')[0]
             btnReset.classList.remove('d-none');
@@ -87,7 +88,7 @@ const saveProduct = async function (newProduct) {
             } else {
                 alert('PRODOTTO AGGIUNTO CORRETTAMENTE')
             }
-            window.location.replace('./index.html')
+            //window.location.replace('./index.html')
         } else {
             alert("PROBLEMA NEL SALVATAGGIO DEL PRODOTTO")
         }
@@ -112,7 +113,11 @@ formReference.addEventListener('submit', (e) => {
     }
 
     console.log(newProduct)
-    saveProduct(newProduct)
+    saveProduct()
+    console.log(saveProduct())
+    console.log(saveProduct(newProduct))
     formReference.reset()
 });
+
+
 
