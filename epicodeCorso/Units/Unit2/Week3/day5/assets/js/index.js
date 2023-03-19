@@ -15,8 +15,8 @@ const displayProducts = function (products) {
       <p class="card-text fs-4 text-center">${product.price}€</p>
       </div>
       <div class="card__btns d-flex justify-content-around me-3">
-      <a href="./backoffice.html?eventId=${product._id}" class="btn btn-danger mx-1">Modifica</a>
-      <a href="./details.html?eventId=${product._id}" class="btn btn-info">Scopri di più</a>
+      <a href="./backoffice.html?eventId=${product._id}" class="btn btn-danger  p-sm-2 p-md-1 p-lg-1 p-xl-2 ">Modify</a>
+      <a href="./details.html?eventId=${product._id}" class="btn btn-info text-white p-sm-2 p-md-1 p-lg-1 p-xl-2">See details</a>
       </div>
     </div>
   </div>`
