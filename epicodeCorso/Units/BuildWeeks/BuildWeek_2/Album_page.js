@@ -1,4 +1,4 @@
-const AGENDA_URL = ' https://striveschool-api.herokuapp.com/api/deezer/album/75621062'
+const AGENDA_URL = ' https://striveschool-api.herokuapp.com/api/deezer/search?q=queen'
 
 let eventId = new URLSearchParams(window.location.search).get('eventId')
 console.log('eventId', eventId)
