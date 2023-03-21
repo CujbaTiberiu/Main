@@ -1,14 +1,13 @@
 /* ---⬇️ Album Section ⬇️---*/
 
 body {
+    width: 100vw !important;
+    max-width: 100vw !important;
+    height: 100vh !important;
+    max-height: 100vh !important;
     font-family: 'Roboto', sans-serif;
     background-color: #caae48;
 }
-
-/* width: 100vw !important;
-    max-width: 100vw !important;
-    height: 100vh !important;
-    max-height: 100vh !important;*/
 
 .album__body p img {
     width: 20px;
@@ -20,7 +19,8 @@ body {
     font-size: 0.5rem;
 }
 
-.user__Bar img {
+.user__Bar img,
+.artist__info img {
     width: 20px;
     height: 20px;
 }
@@ -39,7 +39,6 @@ body {
 }
 
 .container-fluid {
-    height: 100vh;
     background: rgb(0, 0, 0);
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.3967517401392111) 0%, rgba(0, 0, 0, 1) 25%);
 }
@@ -52,7 +51,44 @@ body {
     width: 97%;
 }
 
-/*
-.container-fluid i:first-child:hover {
-    background-color: green;
-}*/
+@media only screen and (max-width: 576px) {
+
+    .song__title,
+    .song__ripro,
+    .bi-clock,
+    .bi-play-circle-fill,
+    .ripro__numb,
+    .song__time,
+    .album__album,
+    .anno__ril,
+    .nr__canzoni,
+    .three__dots {
+        display: none;
+    }
+
+    .artist__title {
+        width: 100% !important;
+        font-size: 1.4rem;
+    }
+
+    .album__body {
+        flex-direction: column;
+    }
+
+    .artist__info {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .album__img {
+        width: 270px;
+        margin-left: 30px !important;
+    }
+
+    /*
+    .icons__play {
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-evenly;
+    }*/
+}
