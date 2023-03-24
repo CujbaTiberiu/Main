@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Album Page Spotify</title>
+    <title>Home Page Spotify</title>
     <link rel="shortcut icon" href="https://www.freeiconspng.com/uploads/spotify-icon-18.png" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
@@ -89,26 +89,12 @@
 
             <!-- ----------------------------------------------------------PARTE CENTRALE---------------------------------------------------------- -->
             <div class="col col-12 col-md-9 col-lg-8 p-0" id="middle">
-                <div class="middleAlbumPage">
-                    <!-- <div class="user__Bar user__BarAlbumPage d-flex justify-content-between align-items-center py-2 sticky-top">
+                <main id="box1">
+                    <div
+                        class=" d-none d-sm-flex d-flex align-items-center justify-content-between bg-dark py-2 sticky-top ">
                         <div class="arrow__Btns ms-3">
                             <button type="button" class="bg-dark text-white border-0 rounded-circle"><i
                                     class="bi bi-chevron-left"></i></button>
-                            <button type="button" class="bg-dark text-white border-0 rounded-circle"><i
-                                    class="bi bi-chevron-right"></i></button>
-                        </div>
-                        <div class="d-flex justify-content-center me-3 bg-black rounded-5 align-items-center  bg-opacity-50">
-                            <img class="rounded-circle mx-1" src="https://place.dog/60/45" alt="user image">
-                            <p class="text-white m-0">nome dell'utente</p>
-                            <i class="bi bi-caret-down-fill mx-1 text-white"></i>
-                        </div>
-                    </div> -->
-                    <div
-                        class="user__Bar user__BarAlbumPage bg-dark d-flex justify-content-between align-items-center py-2 sticky-top d-none d-sm-flex">
-                        <div class="arrow__Btns ms-3">
-                            <a href="./home_page.html"><button type="button"
-                                    class="bg-dark text-white border-0 rounded-circle"><i
-                                        class="bi bi-chevron-left"></i></button></a>
                             <button type="button" class="bg-dark text-white border-0 rounded-circle"><i
                                     class="bi bi-chevron-right"></i></button>
                         </div>
@@ -131,81 +117,196 @@
                         </div>
                     </div>
 
-                    <!-- ⬇️current album⬇️ -->
-                    <div class="album__body d-flex text-white"><!--
-                        <div><img class="album__img shadow-lg img-fluid" src="https://place.dog/150/160"
-                                alt="foto artista">
-                        </div>
-                        <div class="ms-2 mt-3">
-                            <p class="album__album fw-bolder">Album</p>
-                            <h2 class=" album__name display-2 fw-bolder">Nome Album</h2>
-                            <div class="artist__info d-flex">
-                                <div class="d-flex">
-                                    <img class="rounded-circle mx-1" src="https://place.dog/40/30" alt="user image">
-                                    <p>Nome artista -</p>
-                                    <p class="anno__ril">anno rilascio -</p>
-                                    <p class=" nr__canzoni">nr canzoni , <span class="opacity-50 small"> minuti e
-                                            secondi totali</span>
+                    <section id="section_1" class="section">
+                        <div
+                            class="album_in_evidenza my-2 mx-2 bg-secondary bg-gradient bg-opacity-10 d-none d-md-block">
+                            <span class="nascondi p-0 mt-1 mx-2">Nascondi annunci</span>
+                            <div class="img_testi" id="nuovoSingolo">
+                                <!-- <img class="img_singolo_in_evidenza m-2" src="https://picsum.photos/200" alt="#" />
+
+                                <div class="testi">
+                                    <p class="titolo_album_in_evidenza mt-2">Album</p>
+                                    <p class="titolo_singolo_in_evidenza"></p>
+                                    <p class="autore_singolo_in_evidenza"></p>
+                                    <p>
+                                        Ascolta il nuovo singolo di
+                                        <span class="span_autore_singolo_in_evidenza"></span>
                                     </p>
-                                </div>
-                                <p class="album__annoR d-sm-none">Album - <span>anno rilascio</span></p>
-                            </div>
-                        </div>-->
-                    </div>
 
-                    <!-- ⬇️playlist + upper icons⬇️-->
-                    <div class="container-fluid mt-3">
-                        <div class="row">
-                            <div
-                                class="col-12 col-sm-6 icons__play fs-6 d-flex align-items-center justify-content-between mb-3 ms-2">
-
-                                <div class="d-flex align-items-center">
-                                    <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="60" height="60"
-                                            fill="green" class="bi bi-play-circle-fill" viewBox="0 0 16 16">
-                                            <path
-                                                d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814l-3.5-2.5z" />
-                                        </svg></a>
-                                    <i class="bi bi-heart mx-2 text-white opacity-75"></i>
-                                    <i class="bi bi-arrow-down-circle mx-2 text-white opacity-75"></i>
-                                    <i class="bi bi-three-dots mx-2 text-white opacity-75 three__dots"></i>
-                                    <i class="bi bi-three-dots-vertical mx-2 text-white opacity-75 d-sm-none"></i>
-                                </div>
-                                <div class="col-sm-6 d-flex align-items-center shuf__play">
-                                    <i class="bi bi-shuffle d-block d-sm-none mx-2 opacity-75"></i>
-                                    <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="60" height="60"
-                                            fill="green" class="bi bi-play-circle-fill d-block d-sm-none"
-                                            viewBox="0 0 16 16">
-                                            <path
-                                                d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814l-3.5-2.5z" />
-                                        </svg></a>
-                                </div>
-                            </div>
-                            <div class="container div__container mt-1">
-                                <div class="row mb-3">
-                                    <div
-                                        class="col-12 d-flex justify-content-between border-bottom border-2 border-white border-opacity-25 text-white opacity-75 small pl-0">
-                                        <div class="col-2">
-                                            <p class="song__title">#</p>
-                                        </div>
-                                        <div class="col-6">
-                                            <p class="song__title">Titolo</p>
-                                        </div>
-                                        <div class="song__ripro col-3 ">
-                                            <p>Riproduzioni</p>
-                                        </div>
-                                        <div class="col-1 text-center">
-                                            <i class="bi bi-clock"></i>
-                                        </div>
+                                    <div class="pulsanti d-flex align-items-center">
+                                        <a class="pulsante_play" href="">Play</a>
+                                        <a class="pulsante_salva" href="">Salva</a>
+                                        <span class="menu_pulsanti ">&middot;&middot;&middot;</span>
                                     </div>
+                                </div> -->
+                            </div>
 
-                                    <ol id="allSongs">
+                        </div>
 
-                                    </ol>
-                                </div>
+                        <div class="contenitore_saluto_icone  d-flex align-items-center">
+                            <p id="saluto"></p>
+                            <div class="contenitore_saluto_icone--icone  d-md-none">
+                                <ion-icon name="notifications-outline"></ion-icon>
+                                <ion-icon name="time-outline"></ion-icon>
+                                <ion-icon name="settings-outline"></ion-icon>
                             </div>
                         </div>
+
+                        <div class="preferiti"></div>
+                    </section>
+
+                    <div class="p_mobile d-flex d-sm-flex align-items-center d-md-none">
+                        <p class="music">Musica</p>
+                        <p class="Podcast">Podcast e show</p>
                     </div>
-                </div>
+
+                    <section class="container-fluid">
+                        <div class="gallery-vertical row justify-content-around">
+                            <div class="gallery-card-vertical col col-12 col-lg-2 col-xl-1">
+                                <img class="gallery-card-vertical-img"
+                                    src="https://www.amica.it/wp-content//wp-content/gallery/le-copertine-degli-album-stranieri-in-uscita-nellautunno-2019/Mika_cover-nuovo-album-041019.JPG"
+                                    alt="">
+                                <span class="text-truncate">early stage <br> emily syndrome (sett-ott 2022)</span>
+                            </div>
+
+                            <div class="gallery-card-vertical col col-12 col-lg-2 col-xl-1">
+                                <img class="gallery-card-vertical-img"
+                                    src="https://d1csarkz8obe9u.cloudfront.net/themedlandingpages/tlp_hero_album-cover-art-73ab5b3d9b81f442cb2288630ab63acf-1602178816.jpg"
+                                    alt="">
+                                <span class="text-truncate">Be the young</span>
+                            </div>
+
+                            <div class="gallery-card-vertical col col-12 col-lg-2 col-xl-1">
+                                <img class="gallery-card-vertical-img"
+                                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcxYrd7tRiolwAjjCiXkt-BH5M0vgSg4ve1w&usqp=CAU"
+                                    alt="">
+                                <span class="text-truncate">saggio vibes &#128131 &#129648</span>
+                            </div>
+
+                            <div class="gallery-card-vertical col col-12 col-lg-2 col-xl-1">
+                                <img class="gallery-card-vertical-img"
+                                    src="https://static.hiphopdx.com/2017/04/Kendrick-Lamar-Damn-album-cover-592x444.jpg"
+                                    alt="">
+                                <span class="text-truncate">(Revenge) Training Arc &#129421</span>
+                            </div>
+
+                            <div class="gallery-card-vertical col col-12 col-lg-2 col-xl-1">
+                                <img class="gallery-card-vertical-img"
+                                    src="https://cdn.dribbble.com/users/702789/screenshots/16900790/media/628a8bb9f58f4feaea51367fc58b32a3.png?compress=1&resize=400x300"
+                                    alt="">
+                                <span class="text-truncate">Brani che ti piacciono </span>
+                            </div>
+
+                            <div class="gallery-card-vertical col col-12 col-lg-2 col-xl-1">
+                                <img class="gallery-card-vertical-img"
+                                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa4KjWjuGS2ZCV0jVHdE3oLdtkNXou8QC3dQ&usqp=CAU"
+                                    alt="">
+                                <span class="text-truncate">honey and glass (nov-dic 2021)</span>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section id="section_2" class="section">
+                        <div class="testi mx-1 mt-4 mb-3">
+                            <p class="align-self-center m-0">Altro di ciò che ti piace</p>
+                            <span class="align-self-center mx-2">Visualizza tutto</span>
+                        </div>
+                        <div class="container-fluid">
+                            <h3 class="mx-1">Rock</h3>
+                            <div class="containerCards mb-4 row" id="row_rock">
+                            </div>
+
+                            <h3 class="mx-1">Pop</h3>
+                            <div class="containerCards mb-4 row" id="row_pop">
+                            </div>
+
+                            <h3 class="mx-1">Indie</h3>
+                            <div class="containerCards mb-4 row" id="row_indie">
+                            </div>
+                        </div>
+
+                        <!-- <div class="cardsHome m-1">
+                                <div class="item">
+                                    <img src="https://picsum.photos/200" />
+                                    <div class="play">
+                                        <i class="bi bi-play-fill"></i>
+                                    </div>
+                                    <h4>Titolo Prova</h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                </div>
+                            </div>
+                            <div class="cardsHome m-1">
+                                <div class="item">
+                                    <img src="https://picsum.photos/200" />
+                                    <div class="play">
+                                        <i class="bi bi-play-fill"></i>
+                                    </div>
+                                    <h4>Titolo Prova</h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                </div>
+                            </div>
+                            <div class="cardsHome m-1">
+                                <div class="item">
+                                    <img src="https://picsum.photos/200" />
+                                    <div class="play">
+                                        <i class="bi bi-play-fill"></i>
+                                    </div>
+                                    <h4>Titolo Prova</h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                </div>
+                            </div>
+                            <div class="cardsHome m-1">
+                                <div class="item">
+                                    <img src="https://picsum.photos/200" />
+                                    <div class="play">
+                                        <i class="bi bi-play-fill"></i>
+                                    </div>
+                                    <h4>Titolo Prova</h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                </div>
+                            </div>
+                            <div class="cardsHome m-1">
+                                <div class="item">
+                                    <img src="https://picsum.photos/200" />
+                                    <div class="play">
+                                        <i class="bi bi-play-fill"></i>
+                                    </div>
+                                    <h4>Titolo Prova</h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                </div>
+                            </div>
+                            <div class="cardsHome m-1">
+                                <div class="item">
+                                    <img src="https://picsum.photos/200" />
+                                    <div class="play">
+                                        <i class="bi bi-play-fill"></i>
+                                    </div>
+                                    <h4>Titolo Prova</h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                </div>
+                            </div>
+                            <div class="cardsHome m-1">
+                                <div class="item">
+                                    <img src="https://picsum.photos/200" />
+                                    <div class="play">
+                                        <i class="bi bi-play-fill"></i>
+                                    </div>
+                                    <h4>Titolo Prova</h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                </div>
+                            </div>
+                            <div class="cardsHome m-1">
+                                <div class="item">
+                                    <img src="https://picsum.photos/200" />
+                                    <div class="play">
+                                        <i class="bi bi-play-fill"></i>
+                                    </div>
+                                    <h4>Titolo Prova</h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                </div>
+                            </div> -->
+                    </section>
+                </main>
             </div>
             <!-- ----------------------------------------------------------PARTE DESTRA---------------------------------------------------------- -->
             <div class="col d-none d-sm-block d-sm-none d-md-block d-md-none d-lg-block col-2 bg-black pt-2" id="right">
@@ -271,7 +372,7 @@
                     <div>
                         <i class="bi bi-shuffle fs-4 px-2"></i>
                         <i class="bi bi-skip-backward fs-4  px-2"></i>
-                        <i class="bi bi-play-circle fs-1 px-2" onclick="music.pause()"></i>
+                        <i class="bi bi-play-circle fs-1  px-2"></i>
                         <i class="bi bi-skip-forward fs-4  px-2"></i>
                         <i class="bi bi-repeat fs-4  px-2"></i>
                     </div>
@@ -289,15 +390,16 @@
         </div>
         <!-- end of player bar schermi grandi -->
         <!-- start of player bar schermi piccoli -->
-        <div class="container row d-sm-none bg-dark text-light mx-1 rounded-3 fixed-bottom" id="player-small">
-            <div class="d-flex justify-content-between align-items-center p-1 ms-2">
-                <div>
-                    <marquee class=" small mb-0 text-truncate d-flex me-5" id="footerMobile"></marquee>
-                </div>
+        <div class="container d-flex justify-content-end d-sm-none bg-dark text-light mx-1 rounded-3 fixed-bottom" id="player-small">
+            <div class="d-flex align-items-center p-1 ms-2 ">
+
+                <marquee class=" small mb-0 text-truncate d-flex me-5">
+                </marquee>
+
                 <div class="d-flex align-items-center">
                     <i class="bi bi-pc-display fs-5 px-1"></i>
                     <i class="bi bi-heart fs-5 px-1"></i>
-                    <i class="bi bi-play-fill fs-5 px-1" onclick="music.pause()"></i>
+                    <i class="bi bi-play-fill fs-5 px-1"></i>
                 </div>
             </div>
         </div>
@@ -314,11 +416,11 @@
             </ul>
         </div>
     </footer>
-
+    <script src="assets/JS/homepage.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
         crossorigin="anonymous"></script>
-    <script src="./assets/JS/Album_page.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 </body>
 
 </html>

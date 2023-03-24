@@ -1,10 +1,36 @@
-const AGENDA_URL = ' https://striveschool-api.herokuapp.com/api/deezer/search?q=queen'
+const ALBUM_URL = ' https://striveschool-api.herokuapp.com/api/deezer/album/'
 
 let eventId = new URLSearchParams(window.location.search).get('eventId')
 console.log('eventId', eventId)
-// eventId può essere una stringa _id o null
 
-fetch(AGENDA_URL)
+if (eventId) {
+
+    fetch(ALBUM_URL + eventId, {
+        headers: {
+            'Content-Type': 'application/json'
+        }
+    })
+        .then((response) => {
+            if (response.ok) {
+                return response.json()
+            } else {
+                return new Error('Error!')
+            }
+        })
+        .then((album) => {
+            console.log(album)
+
+
+        })
+        .catch((err) => {
+            console.log(err)
+        })
+}
+
+
+
+/*
+fetch(ALBUM_URL)
     .then((response) => {
         if (response.ok) {
             return response.json()
@@ -19,3 +45,4 @@ fetch(AGENDA_URL)
     .catch((err) => {
         console.log(err)
     })
+*/
